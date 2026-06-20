@@ -26,15 +26,15 @@ export const recommendations = [
   {
     id: 4,
     name: "Omid Mardaneh",
-    role: "Senior Front-End Engineer",
+    role: "Senior Front-End Engineer At APSY",
     quote:
       "I have had the opportunity to work with Omid on multiple projects, and he has always demonstrated strong knowledge and deep experience. He plays a highly effective and influential role within the team and the overall project workflow. Omid learns quickly, adapts fast, and continually improves his skills. He is especially strong in integrations, UI design, and resolving complex technical challenges. His problem-solving skills and hands-on experience make him extremely reliable, particularly in large and demanding projects. Omid is a valuable teammate, both professionally and personally, and I highly recommend him as a colleague.",
     linkedinUrl: "https://www.linkedin.com/in/omid-mardaneh/",
   },
   {
     id: 5,
-    name: "Kamyar Jamshidi",
-    role: "Senior Back-End Engineer",
+    name: "Kamyar Jamshidi ",
+    role: "Senior Back-End Engineer At APSY",
     quote:
       "I had the pleasure of working with Omid as a frontend developer while I was a backend developer at IFS and Apsaaz. Omid is a highly skilled and dedicated professional with exceptional talent in creating high-quality web pages and seamlessly handling complex business logic. He is also an expert at integrating external services into software systems. Beyond his technical expertise, Omid’s patience, collaborative attitude, and strong work ethic make him a valuable asset to any team.",
     linkedinUrl: "https://www.linkedin.com/in/kamyar-jamshidi/",
