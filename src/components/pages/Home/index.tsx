@@ -1,13 +1,14 @@
-import { Suspense } from "react";
+"use client";
+
+import { lazy, Suspense } from "react";
 import HeroComponent from "./hero";
 import InformationComponent from "./information";
-import dynamic from "next/dynamic";
 import LoadingCircle from "../../atom/loadings/loading-circle";
 
-const ExperiencesComponent = dynamic(() => import("./experiences"));
-const SkillsComponent = dynamic(() => import("./skills"));
-const LandingProjectsComponent = dynamic(() => import("./projects"));
-const RecommendsComponent = dynamic(() => import("./recommendations"));
+const ExperiencesComponent = lazy(() => import("./experiences"));
+const SkillsComponent = lazy(() => import("./skills"));
+const LandingProjectsComponent = lazy(() => import("./projects"));
+const RecommendsComponent = lazy(() => import("./recommendations"));
 
 const HomeComponent = () => {
   return (
