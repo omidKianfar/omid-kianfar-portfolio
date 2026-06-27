@@ -1,4 +1,4 @@
-import RecommendationsComponent from "@/src/components/recommendations";
+import RecommendationsComponent from "@/src/components/pages/recommendations";
 
 const page = () => {
   return <RecommendationsComponent />;

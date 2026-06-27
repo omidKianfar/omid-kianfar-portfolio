@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { TitleComponentProps } from "../Home/type";
+import { TitleComponentProps } from "./type";
 
 const TitleComponent = ({
   eyebrow,

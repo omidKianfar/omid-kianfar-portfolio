@@ -1,15 +1,21 @@
 "use client";
+
+import { lazy } from "react";
 import { notFound, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { PersonalProjects, SelectCompaniesProjects } from "./data";
+import { Project } from "./type";
 
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Project } from "./type";
+
+const LightBoxComponent = lazy(
+  () => import("@/src/components/common/light-box"),
+);
 
 const ProjectDetailComponent = () => {
   const params = useSearchParams();
@@ -65,16 +71,17 @@ const ProjectDetailComponent = () => {
             navigation
             pagination={{ clickable: true }}
             autoplay={{ delay: 3000 }}
-            
             className="h-64 md:h-96"
           >
-            {images.map((img: string, i: number) => (
-              <SwiperSlide key={i}>
-                <img
-                  src={img}
-                  alt="project-slide"
-                  className="w-full h-full object-cover"
-                />
+            {images.map((imgURL, index) => (
+              <SwiperSlide key={index}>
+                <LightBoxComponent url={imgURL as string}>
+                  <img
+                    src={imgURL as string}
+                    alt="project-slide"
+                    className="w-full h-full object-cover"
+                  />
+                </LightBoxComponent>
               </SwiperSlide>
             ))}
           </Swiper>
