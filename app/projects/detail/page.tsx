@@ -1,7 +1,9 @@
-import ProjectDetailComponent from "@/src/components/projects/detail";
+import { Suspense } from "react";
+import PageLoading from "@/src/components/common/page-loading";
+import ProjectDetailComponent from "@/src/components/pages/projects/detail";
 
 const ProjectDetailpage = () => {
-  return <ProjectDetailComponent />;
+  return <Suspense fallback={<PageLoading/>}><ProjectDetailComponent /></Suspense>;
 };
 
 export default ProjectDetailpage;
