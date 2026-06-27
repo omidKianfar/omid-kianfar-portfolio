@@ -5,7 +5,7 @@ Senior Front-End Developer with 6 years of experience, specializing in building 
 
 ---
 
-## 🛠 Technical Expertise
+## Technical Expertise
 *   **Core:** TypeScript, JavaScript (ES6+).
 *   **Frameworks & Libraries:** Next.js, React.js, Vue.js.
 *   **Architecture:** System Design, Atomic Design, Clean Code.
@@ -20,7 +20,7 @@ Senior Front-End Developer with 6 years of experience, specializing in building 
 
 ---
 
-## 💼 Professional Experience
+## Professional Experience
 
 ### Front-End Developer | Apsy Company (Remote, US)
 *Full-Time (3.5 Years)*
@@ -42,14 +42,14 @@ Senior Front-End Developer with 6 years of experience, specializing in building 
 
 ---
 
-## 🚀 Projects
+## Projects
 *   **Mini-Jira | Enterprise Project Management SaaS:** Built with Next.js 16, FFmpeg media pipelines, and real-time Kanban engines.
 *   **Google Calendar Task Manager:** High-performance interface featuring Google OAuth 2.0 and FullCalendar integration.
 *   **Confidential Enterprise Projects:** Led development for multi-tenant B2B SaaS (Infuuse) and EdTech node-graph engines (Octobit/React Flow).
 
 ---
 
-## 📧 Contact
+## Contact
 * **Resume:** [Download PDF Version](https://github.com/omidKianfar/omid-kianfar-resume/raw/main/Omid-Kianfar-Resume.pdf) — *Detailed work history and technical achievements.*
 *   **Email:** omid.kianfar.dev@gmail.com
 *   **GitHub:** [github.com/omidKianfar](https://github.com/omidKianfar)
