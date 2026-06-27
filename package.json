@@ -14,7 +14,9 @@
     "prettier": "^3.8.3",
     "react": "19.2.4",
     "react-dom": "19.2.4",
-    "swiper": "^12.2.0"
+    "react-spinners": "^0.17.0",
+    "swiper": "^12.2.0",
+    "yet-another-react-lightbox": "^3.32.0"
   },
   "devDependencies": {
     "@types/node": "^20",
