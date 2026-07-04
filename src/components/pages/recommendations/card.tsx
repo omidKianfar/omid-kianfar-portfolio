@@ -15,7 +15,7 @@ const RecommendationCardComponent = ({
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true }}
     whileHover={{ y: -8, borderColor: "rgba(56, 189, 248, 0.5)" }}
-    className="flex flex-col rounded-2xl border border-white/10 bg-white/5 p-6 transition-all duration-300 hover:bg-white/[0.07] hover:shadow-xl hover:shadow-sky-500/10 "
+    className="flex flex-col rounded-2xl border border-white/10 bg-white/5 p-6 transition-all duration-300 hover:bg-white/[0.07] hover:shadow-xl hover:shadow-sky-500/10 cursor-default"
   >
     <p className="leading-7 text-gray-300 italic mb-6 max-h-[300px] overflow-y-auto pr-2">{quote}</p>
 

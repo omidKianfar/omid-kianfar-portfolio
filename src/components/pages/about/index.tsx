@@ -8,7 +8,7 @@ const AboutComponent = () => {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="mx-auto max-w-4xl px-4 py-20 sm:px-6 lg:px-8"
+      className="mx-auto max-w-4xl px-4 py-20 sm:px-6 lg:px-8 cursor-default"
     >
       <TitleComponent
         eyebrow="About Me"

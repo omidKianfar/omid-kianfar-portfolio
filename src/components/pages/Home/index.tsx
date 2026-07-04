@@ -12,7 +12,7 @@ const RecommendsComponent = lazy(() => import("./recommendations"));
 
 const HomeComponent = () => {
   return (
-    <div>
+    <div className="cursor-default">
       <HeroComponent />
       <InformationComponent />
 

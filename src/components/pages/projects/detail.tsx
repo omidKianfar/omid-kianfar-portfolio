@@ -28,7 +28,7 @@ const ProjectDetailComponent = () => {
   const images = (project as Project).images || [];
 
   return (
-    <div className="mx-auto max-w-4xl px-4 py-12 text-white">
+    <div className="mx-auto max-w-4xl px-4 py-12 text-white cursor-default">
       <Link
         href="/projects"
         className="text-sky-400 hover:text-sky-300 transition-colors"
@@ -79,7 +79,7 @@ const ProjectDetailComponent = () => {
                   <img
                     src={imgURL as string}
                     alt="project-slide"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover cursor-zoom-in"
                   />
                 </LightBoxComponent>
               </SwiperSlide>

@@ -9,19 +9,19 @@ export const skills = [
   },
   {
     title: "Architectural Patterns",
-    items: ["System Design", "Atomic Design", "Clean Code"],
+    items: ["System Design", "Atomic Design", "Web Performance Optimization", "Clean Code"],
   },
   {
-    title: "Data Layer Data Fetching",
-    items: ["GraphQL", "React Query", "RESTful APIs"],
+    title: "Data Layer & Fetching",
+    items: ["GraphQL", "RESTful APIs", "React Query", "GraphQL Codegin"],
   },
   {
     title: "State Management",
-    items: ["Redux Toolkit (RTK)", "Valtio"],
+    items: ["Redux Toolkit (RTK)", "Redux.js", "Valtio"],
   },
   {
-    title: "UI/UX & Interactive Design Styling",
-    items: ["MUI (Material UI)", "Tailwind CSS", "Styled Components"],
+    title: "UI/UX & Styling",
+    items: ["MUI (Material UI)", "Tailwind CSS", "Styled Components", "HeroUI", "Bootstrap (Framework)", "SASS"],
   },
   {
     title: "Interactivity & Animation",
@@ -32,15 +32,15 @@ export const skills = [
     items: ["FFmpeg", "Wave Surfer"],
   },
   {
-    title: "Cloud, Backend & Integrations BaaS & Databases",
+    title: "Cloud, Backend & Databases",
     items: ["Firebase (Firestore, Auth)", "Supabase", "Laravel", "My SQL"],
   },
   {
-    title: "Integrations",
+    title: "Integrations & Services",
     items: ["Stripe", "Socket.io", "WebSocket", "Google OAuth 2.0", "Twilio"],
   },
   {
-    title: "Quality, Testing & Workflow Testing",
+    title: "Quality & Testing",
     items: ["Jest", "React Testing Library"],
   },
   {
@@ -52,7 +52,7 @@ export const skills = [
     items: ["Agile", "Scrum"],
   },
   {
-    title: "Tools",
+    title: "Tools & DevOps",
     items: ["Git", "Webpack", "Microsoft Azure", "Jira", "AWS"],
   },
 ];

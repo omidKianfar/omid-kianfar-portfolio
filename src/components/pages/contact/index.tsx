@@ -7,7 +7,7 @@ import { contacts } from "./data";
 
 const ContactComponent = () => {
   return (
-    <div className="mx-auto max-w-4xl px-4 py-20 sm:px-6 lg:px-8">
+    <div className="mx-auto max-w-4xl px-4 py-20 sm:px-6 lg:px-8 cursor-default">
       <TitleComponent
         eyebrow="Contact"
         title="Let’s build something great"
