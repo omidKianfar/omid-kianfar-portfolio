@@ -54,7 +54,7 @@ const RecommendationsComponent = () => {
             target="_blank"
             className="inline-block px-6 py-3 bg-sky-600 hover:bg-sky-500 text-white rounded-full font-semibold text-sm transition-all hover:scale-105"
           >
-            Check Recommendations
+            View Recommendations
           </a>
         </motion.div>
       </div>
