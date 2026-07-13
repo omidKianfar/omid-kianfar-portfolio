@@ -13,7 +13,7 @@ export const skills = [
   },
   {
     title: "Data Layer & Fetching",
-    items: ["GraphQL", "RESTful APIs", "React Query", "GraphQL Codegin"],
+    items: ["GraphQL", "RESTful APIs", "React Query", "GraphQL Codegen"],
   },
   {
     title: "State Management",
