@@ -24,7 +24,7 @@ const LandingProjectsComponent = () => {
         title="Featured Work"
         description="Selected projects demonstrating architecture."
       />
-      <motion.div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <motion.div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3 items-start">
         {DisplayProjects.map((project) => (
           <ProjectCardComponent key={project.id} project={project as Project} />
         ))}

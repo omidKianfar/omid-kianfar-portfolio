@@ -45,7 +45,7 @@ const HeroComponent = () => {
           Senior Front-End Developer with 6 years of experience, specializing in
           building high-performance applications with Next.js and TypeScript.
           Proven track record of working remotely on complex, large-scale
-          projects for international markets, including the U.S. and Europe.
+          projects for international markets, including the USA, Canada and Europe.
           Expertise in owning end-to-end front-end architecture, with a strong
           focus on scalability, maintainability, and seamless third-party
           integrations. A highly reliable problem solver, recognized for
