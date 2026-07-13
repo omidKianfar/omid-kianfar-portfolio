@@ -3,37 +3,42 @@ const PersonalProjects = [
     id: "mini-jira",
     title: "Mini-Jira | Enterprise Project Management SaaS",
     description:
-      "Engineered a production-grade, highly modular SaaS project management platform from scratch, focusing on scalability and high-performance team collaboration. Built with Next.js 16 (App Router) and TypeScript, following strict Atomic Design principles to ensure enterprise-level code maintainability",
+      "Engineered a production-grade, highly modular SaaS project management platform from scratch, focusing on scalability and high-performance team collaboration. Built with Next.js 16 (App Router) and TypeScript, following strict Atomic Design principles to ensure enterprise-level code maintainability.",
     category: "Personal",
     achievements: [
       {
-        title: "Architecture & Design",
+        title: "Architecture",
         description:
-          "Engineered a highly scalable SaaS platform using Next.js 16 (App Router) and Atomic Design. Architected a decoupled system that ensures rapid feature iteration and long-term code maintainability",
+          "Engineered a scalable SaaS using Next.js 16 (App Router) and Atomic Design for modular, maintainable code.",
       },
       {
-        title: "Media Processing Pipeline",
+        title: "State Management",
         description:
-          "Built a custom in-browser media pipeline featuring FFmpeg for server-side-equivalent video compression and react-easy-crop for image optimization, significantly improving performance by offloading complex processing from the backend",
+          "Managed complex global state (tasks, chats, users, filters) with Redux Toolkit, synced in real-time with Firebase Firestore listeners.",
       },
       {
-        title: "Real-time Collaboration & Logic",
+        title: "Media Pipeline",
         description:
-          "Integrated Firebase Realtime DB for low-latency synchronization and Stripe for subscription management. Implemented robust Role-Based Access Control (RBAC) using Supabase RLS policies to ensure enterprise-level security",
+          "Built a custom in-browser video compression (FFmpeg WASM) and image cropping/optimization pipeline (react-easy-crop), offloading heavy processing from the backend.",
       },
       {
-        title: "Performance & UI/UX",
+        title: "Support & Communication Hub",
         description:
-          "Developed a high-fidelity Kanban engine via @dnd-kit and a deeply customized Slate.js rich-text editor. Enhanced user experience with hardware-accelerated animations using Framer Motion, achieving a seamless, zero-layout-shift interface",
+          "Built a real-time support chat (Firestore) with a custom Slate.js editor, voice recording (RecordRTC), and audio waveform visualization (wavesurfer.js).",
       },
       {
-        title: "Quality Assurance & Type Safety",
+        title: "SaaS Billing",
         description:
-          "Enforced strict TypeScript architecture with complex interface inheritance. Validated mission-critical logic via a comprehensive unit testing suite using Jest and React Testing Library, ensuring 99.9% reliability for forms and auth workflows",
+          "Implemented end-to-end Stripe subscription logic (monthly/yearly plans, trial mode) with API-driven success/failure flows.",
+      },
+      {
+        title: "Access Control & Quality",
+        description:
+          "Built Role-Based Access Control via custom Auth/Role guards, and covered core components (forms, modals) with Jest and React Testing Library.",
       },
     ],
     myRole:
-      "Owned the full-cycle development of a sophisticated SaaS application, bridging advanced client-side media processing with complex real-time collaborative state management to deliver a professional-grade project management experience",
+      "Owned the full-cycle development of a sophisticated SaaS application, bridging advanced client-side media processing with complex real-time collaborative state management to deliver a professional-grade project management experience.",
     images: [
       "/images/next-mini-jira/user-dashboard.png",
       "/images/next-mini-jira/Kanban.png",
@@ -46,20 +51,29 @@ const PersonalProjects = [
     techStack: [
       "Next.js",
       "TypeScript",
-      "JavaScript(ES6)",
-      "Redux Toolkit",
-      "Firebase (Realtime DB/Auth)",
+      "JavaScript (ES6+)",
+      "System Design",
+      "Atomic Design",
+      "Web Performance Optimization",
+      "Clean Code",
+      "Redux Toolkit (RTK)",
+      "Firebase",
+      "Firestore",
       "Supabase",
-      "Stripe",
-      "FFmpeg",
-      "Slate.js",
-      "react-easy-crop",
-      "React Hook Form",
-      "Yup",
+      "Ffmpeg",
       "Tailwind CSS",
       "Framer Motion",
+      "React Hook Form",
+      "Yup",
+      "React Testing Library",
       "Jest",
-      "RTL",
+      "Stripe",
+      "Slate.js",
+      "DND Kit",
+      "Emoji Mart",
+      "Wave Surfer",
+      "Day.js",
+      "Notistack",
       "Git",
     ],
     liveUrl: {
@@ -75,32 +89,42 @@ const PersonalProjects = [
     id: "google-calendar",
     title: "Google Calendar Task Manager | SaaS",
     description:
-      "A high-performance SaaS scheduling interface featuring real-time event management, secure Google Calendar integration, and a modular, scalable architecture",
+      "A high-performance SaaS scheduling interface featuring real-time event management, secure Google Calendar integration, and a modular, scalable architecture.",
     category: "Personal",
     achievements: [
       {
-        title: "Strategic Landing Experience",
+        title: "Authentication",
         description:
-          "Engineered a high-conversion landing page featuring a Sign-in with Google flow, leveraging OAuth 2.0 to authenticate users and securely authorize access to their Google Calendar data",
+          "Engineered a secure Google OAuth 2.0 (Implicit Flow) integration with in-memory token storage to avoid cross-tab sync issues and client-side storage risks.",
       },
       {
-        title: "Dynamic Calendar Engine",
+        title: "Business Logic",
         description:
-          "Engineered a high-performance scheduling interface using FullCalendar and Day.js, enabling real-time CRUD operations for calendar events with complex date manipulations",
+          "Centralized all calendar CRUD operations and state (loading/error) into a single custom hook (useGoogleCalendar), isolating logic from the UI.",
       },
       {
-        title: "Scalable & Modular UI",
+        title: "Scheduling Engine",
         description:
-          "Built a modular front-end architecture leveraging Atomic Design principles, utilizing React Hook Form with Yup for data validation, and implementing Suspense/Lazy-loading to optimize performance for heavy calendar components",
+          "Built a FullCalendar-based interface for viewing, creating, editing, and deleting events, with modal-driven confirmation flows.",
+      },
+      {
+        title: "Forms & Validation",
+        description:
+          ": Implemented React Hook Form with Yup, including cross-field validation (end time must follow start time).",
       },
       {
         title: "Quality Assurance",
         description:
-          "Developed a robust testing suite using Jest and React Testing Library, ensuring high application reliability for critical user flows including event creation, editing, and form validation schemas",
+          "Covered core logic and components (schema, modals, inputs) with Jest and React Testing Library unit tests.",
+      },
+      {
+        title: "Performance",
+        description:
+          "Optimized load times via React Suspense and lazy-loading for modals and heavy components.",
       },
     ],
     myRole:
-      "Spearheaded the development of a complex scheduling dashboard, bridging raw Google Calendar API data with a seamless user-facing interface, while ensuring data integrity and optimizing the application for real-time calendar synchronization",
+      "Spearheaded the development of a complex scheduling dashboard, bridging raw Google Calendar API data with a seamless user-facing interface, while ensuring data integrity and optimizing the application for real-time calendar synchronization.",
     images: [
       "/images/next-google-calendar/image.png",
       "/images/next-google-calendar/image-4.png",
@@ -108,17 +132,22 @@ const PersonalProjects = [
     techStack: [
       "Next.js",
       "TypeScript",
-      "Javascript (ES6+)",
-      "Google OAuth 2.0",
+      "JavaScript (ES6+)",
+      "System Design",
+      "Atomic Design",
+      "Web Performance Optimization",
+      "Clean Code",
+      "Google OAuth",
+      "Tailwind CSS",
       "React Testing Library",
       "Jest",
       "React Hook Form",
       "Yup",
-      "Tailwind CSS",
-      "Lottie React",
-      "Responsive UI",
+      "FullCalendar",
       "REST APIs",
-      "Full Calendar",
+      "Day.js",
+      "Momemt.js",
+      "Lottie react",
       "Notistack",
       "Git",
     ],
@@ -136,43 +165,38 @@ const SelectCompaniesProjects = [
     title:
       "Infuuse | B2B Business Automation SaaS (Enterprise Communication Platform)",
     description:
-      "Infuuse is a comprehensive, multi-tenant B2B SaaS platform designed to streamline communication and business automation for agencies and their clients. Acting as the lead front-end developer, I architected a complex, high-concurrency dashboard that centralizes multi-channel communications—including real-time chat, Twilio-integrated voice/video calling, and unified inbox management",
+      "Infuuse is a comprehensive, multi-tenant B2B SaaS platform designed to streamline communication and business automation for agencies and their clients. Acting as the lead front-end developer, I architected a complex, high-concurrency dashboard that centralizes multi-channel communications—including real-time chat, Twilio-integrated voice/video calling, and unified inbox management.",
     category: "Company",
     achievements: [
       {
-        title: "Architecture & Scalability",
+        title: "Scalability",
         description:
-          "Led the front-end development of a multi-tenant B2B SaaS platform using Next.js and GraphQL. Engineered a modular UI system based on Atomic Design principles to ensure high reusability across the core application, Admin Panel, and landing pages",
+          "Sole front-end developer for a multi-tenant B2B platform (Next.js, GraphQL); owned all architecture and technical decisions end-to-end beyond the initial boilerplate. Built a modular UI system (Atomic Design).",
       },
       {
-        title: "Access Control & Security",
+        title: "Unified Inbox",
         description:
-          "Designed a robust Hierarchical Route Protection System, implementing custom AuthGuard and RoleGuard patterns to manage complex permissions across Owners, Agencies, and Members",
+          "Built a real-time unified inbox (WebSocket) merging live chat, Twilio SMS/calls/video, and Gmail messages into a single conversation view.",
       },
       {
-        title: "Complex Integrations & Workflow",
+        title: "Security & Integration",
         description:
-          "Architected seamless real-time communication modules by integrating Twilio (Voice, SMS, Video) and Google OAuth 2.0. Developed a unified message inbox synchronizing live chat, Twilio messages, and Gmail",
+          "Built hierarchical route protection and real-time communication modules (Twilio, Google OAuth).",
       },
       {
-        title: "Advanced Data & Form Handling",
+        title: "Billing & Reporting",
         description:
-          "Managed high-frequency data updates using React Query and Redux Toolkit/Valtio. Developed complex forms using React Hook Form with Yup schema validation",
+          "Implemented Stripe subscription billing (monthly/yearly/custom, with discount logic) and analytics dashboards (Chart.js) for tickets and calls across custom time ranges.",
       },
       {
-        title: "Rich Text & Media",
+        title: "Data Handling",
         description:
-          "Integrated a custom Slate.js editor and media processing pipelines (WaveSurfer, Lightbox) to enhance user productivity",
+          "Managed high-frequency data updates (React Query, Valtio), drag-and-drop ticket management (react-beautiful-dnd), and complex form validation (RHF, Yup).",
       },
       {
-        title: "Performance & Testing",
+        title: "Productivity",
         description:
-          "Optimized performance via Lazy Loading and Suspense. Ensured code reliability using Jest and React Testing Library",
-      },
-      {
-        title: "Team Collaboration & Delivery",
-        description:
-          "Collaborated in an agile cross-functional team, bridging complex backend GraphQL requirements with intuitive UI workflows and maintaining high standards in design-to-code implementation",
+          "Integrated a custom Slate.js editor and media pipelines to streamline user workflows.",
       },
     ],
     myRole: "Front-end Architect & Lead Developer",
@@ -180,24 +204,40 @@ const SelectCompaniesProjects = [
     techStack: [
       "Next.js",
       "TypeScript",
-      "GraphQL (Codegen)",
+      "JavaScript (ES6+)",
+      "System Design",
+      "Atomic Design",
+      "Web Performance Optimization",
+      "Clean Code",
+      "GraphQL",
+      "REST APIs",
       "React Query",
-      "Redux Toolkit",
+      "GraphQL Codegen",
+      "Redux Toolkit (RTK)",
       "Valtio",
-      "MUI",
-      "Styled Components",
-      "Tailwind CSS",
+      "Google OAuth",
+      "Firebase",
+      "WebSocket",
       "React Hook Form",
       "Yup",
-      "Twilio SDK",
-      "Slate.js",
-      "Full Calendar",
+      "MUI (Material UI)",
+      "Styled Component",
       "Stripe",
-      "Firebase",
-      "Google APIs",
-      "Lottie React",
+      "Twilio",
+      "Slate.js",
+      "Chart.js",
+      "FullCalendar",
+      "Emoji Mart",
+      "Wave Surfer",
+      "Day.js",
+      "Momemt.js",
       "Notistack",
+      "Axios",
       "Git",
+      "Agile Methodologies",
+      "Scrum",
+      "Microsoft Azure",
+      "Amazon Web Services (AWS)",
     ],
     nda: "Due to strict NDA agreements, specific business logic and proprietary architectural details are intentionally omitted.",
   },
@@ -205,43 +245,38 @@ const SelectCompaniesProjects = [
     id: "octobit",
     title: "Octobit | Enterprise EdTech Scenario & Assessment SaaS",
     description:
-      "An enterprise-grade EdTech SaaS platform for constructing and delivering complex, branching educational scenarios with real-time biometric assessment",
+      "An enterprise-grade EdTech SaaS platform for constructing and delivering complex, branching educational scenarios with real-time biometric assessment.",
     category: "Company",
     achievements: [
       {
-        title: "Architecture & Visual Engine",
+        title: "Dynamic Engine",
         description:
-          ": Led the front-end architecture for a Canadian EdTech SaaS. Built a complex, rule-based branching engine where users navigate through infinite paths (Question/Blog/Transition/Conversation) based on dynamic assessment metrics",
+          "Owned front-end architecture for a rule-based branching engine, enabling unlimited user paths based on dynamic assessment metrics.",
       },
       {
-        title: "Visual Scenario Construction",
+        title: "Visual Editor",
         description:
-          "Engineered a high-interaction Node-Graph Editor using React Flow, allowing admins to visually configure complex non-linear scenarios. Implemented an automated integrity-check system that prevents publishing scenarios until all conversational logic and nodes are fully validated",
+          "Built an interactive Node-Graph Editor (React Flow) for visual scenario configuration with automated integrity checks.",
       },
       {
-        title: "Biometric Assessment",
+        title: "Admin & Access Control",
         description:
-          "Integrated AWS Amplify (Predictions) to analyze user audio input in real-time, detecting vocal tone and stress levels as a primary metric for assessment scoring",
+          "Built an admin panel for scenario/category creation with pre-publish validation and safe publish/unpublish handling, plus team management (member invites via email, role assignment, admin activation).",
       },
       {
-        title: "Deep State & Logic Orchestration",
+        title: "Progress Visualization",
         description:
-          "Managed highly complex state dependencies for multi-role dashboards (Team Owner, Member, Admin) using Valtio and Redux Toolkit. Implemented a rich-text authoring system using Slate.js with custom node-views for integrated media (images/video) uploading",
+          "Engineered SVG-based, color-coded progress indicators tied to dynamic scoring, alongside Recharts dashboards for usage and payment tracking.",
       },
       {
-        title: "Dynamic Ecosystem & Metrics",
+        title: "Biometric & State",
         description:
-          "Developed a fully dynamic landing page with a CMS-like admin panel for content and styling updates. Visualized user progress through complex data-driven charts using Chart.js and Recharts, with RHF (React Hook Form) controllers for managing multi-metric assessment configurations",
+          "Integrated AWS Amplify for real-time audio stress analysis; managed complex state across multi-role dashboards (Valtio, Redux Toolkit).",
       },
       {
-        title: "Enterprise SaaS Features",
+        title: "Enterprise Features",
         description:
-          "Built a multi-tenant billing system with Stripe (monthly/yearly subscriptions and custom discounts), and real-time notification infrastructure via WebSockets. Handled complex team management including member invitations, role-based access control (RBAC), and individual progress monitoring",
-      },
-      {
-        title: "Cross-Functional Collaboration",
-        description:
-          "Worked closely with product designers and backend engineers to translate complex educational scenarios into a seamless front-end experience, ensuring technical feasibility of real-time audio and node-graph requirements",
+          "Built a multi-tenant billing system (Stripe), real-time notifications (WebSockets), and automated certificate generation on scenario completion.",
       },
     ],
     myRole: "Front-end Architect & Lead Developer",
@@ -249,25 +284,38 @@ const SelectCompaniesProjects = [
     techStack: [
       "Next.js",
       "TypeScript",
-      "GraphQL (Codegen)",
+      "JavaScript (ES6+)",
+      "System Design",
+      "Atomic Design",
+      "Web Performance Optimization",
+      "Clean Code",
+      "GraphQL",
       "React Query",
-      "Redux Toolkit",
+      "GraphQL Codegen",
       "Valtio",
-      "React Flow",
-      "AWS Amplify",
-      "MUI",
-      "Emotion",
-      "Slate.js",
+      "Firebase",
+      "WebSocket",
       "React Hook Form",
       "Yup",
+      "MUI (Material UI)",
+      "Styled Component",
       "Stripe",
-      "Firebase",
+      "Slate.js",
+      "AWS Amplify",
+      "React Flow",
       "Chart.js",
-      "Recharts",
-      "Lottie React",
+      "Recharts.js",
+      "Emoji Mart",
+      "Lottie react",
+      "Day.js",
       "Notistack",
+      "Git",
+      "Agile Methodologies",
+      "Scrum",
+      "Microsoft Azure",
+      "Amazon Web Services (AWS)",
     ],
-    nda: "Specific project architecture, proprietary conversational logic, and client-side implementation details are protected under NDA",
+    nda: "Specific project architecture, proprietary conversational logic, and client-side implementation details are protected under NDA.",
   },
 ];
 

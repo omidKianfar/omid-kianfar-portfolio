@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
 import { ProjectCardComponentProps } from "./type";
@@ -7,14 +8,24 @@ import { ProjectCardComponentProps } from "./type";
 const ProjectCardComponent = ({ project }: ProjectCardComponentProps) => {
   const router = useRouter();
 
+  const [showAllSkills, setShowAllSkills] = useState(false);
+
+  const MAX_SKILLS = 15;
+  const hasMoreSkills =
+    project?.techStack && project.techStack.length > MAX_SKILLS;
+
+  const displayedSkills = showAllSkills
+    ? project?.techStack
+    : project?.techStack?.slice(0, MAX_SKILLS);
+
   return (
     <motion.article
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      whileHover={{ y: -8 }}
+      whileHover={{ y: -6 }}
       onClick={() => router.push(`/projects/detail?projectId=${project.id}`)}
-      className="relative cursor-pointer group flex h-full flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/5 transition-all duration-300 hover:border-sky-400/50 hover:bg-white/[0.07] hover:shadow-2xl hover:shadow-sky-500/10"
+      className="relative cursor-pointer group flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/5 transition-all duration-200 hover:border-sky-400/50 hover:bg-white/[0.07] hover:shadow-2xl hover:shadow-sky-500/10"
     >
       <div className="absolute top-4 right-4">
         <span
@@ -25,7 +36,7 @@ const ProjectCardComponent = ({ project }: ProjectCardComponentProps) => {
       </div>
 
       <div className="flex flex-1 flex-col p-6 mt-4">
-        <h3 className="text-xl font-bold text-white transition-colors group-hover:text-sky-400">
+        <h3 className="text-xl font-bold text-white transition-colors group-hover:text-sky-400 line-clamp-2">
           {project.title}
         </h3>
 
@@ -34,7 +45,7 @@ const ProjectCardComponent = ({ project }: ProjectCardComponentProps) => {
         </p>
 
         <div className="mt-6 flex flex-wrap gap-2">
-          {project?.techStack?.map((skill) => (
+          {displayedSkills?.map((skill) => (
             <span
               key={skill}
               className="rounded-md border border-sky-400/10 bg-sky-400/5 px-2 py-1 text-[10px] uppercase text-sky-300"
@@ -42,6 +53,20 @@ const ProjectCardComponent = ({ project }: ProjectCardComponentProps) => {
               {skill}
             </span>
           ))}
+
+          {hasMoreSkills && (
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                setShowAllSkills(!showAllSkills);
+              }}
+              className={`text-[14px] font-semibold  transition-colors ${showAllSkills ? " text-orange-400 hover:text-orange-300" : "text-blue-400 hover:text-blue-300"}`}
+            >
+              {showAllSkills
+                ? "Show Less"
+                : `+ ${project?.techStack && project?.techStack?.length - MAX_SKILLS} more`}
+            </button>
+          )}
         </div>
       </div>
     </motion.article>

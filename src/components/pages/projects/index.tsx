@@ -7,7 +7,7 @@ import { PersonalProjects, SelectCompaniesProjects } from "./data";
 import { Project } from "./type";
 
 const Projectscard = ({ projects }: { projects: Project[] }) => (
-  <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+  <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 items-start">
     {projects.map((project) => (
       <ProjectCardComponent key={project.id} project={project as Project} />
     ))}
@@ -23,13 +23,25 @@ const ProjectsComponent = () => {
         description="Architecture & Scalability"
       />
 
-      <h2 className="text-2xl font-bold text-white mt-20 mb-8">Personal Projects</h2>
-      <Suspense fallback={<div className="h-64 w-full animate-pulse bg-white/5 rounded-2xl" />}>
+      <h2 className="text-2xl font-bold text-white mt-20 mb-8">
+        Personal Projects
+      </h2>
+      <Suspense
+        fallback={
+          <div className="h-64 w-full animate-pulse bg-white/5 rounded-2xl" />
+        }
+      >
         <Projectscard projects={PersonalProjects as Project[]} />
       </Suspense>
 
-      <h2 className="text-2xl font-bold text-white mt-12 mb-8">Professional Experience</h2>
-      <Suspense fallback={<div className="h-64 w-full animate-pulse bg-white/5 rounded-2xl" />}>
+      <h2 className="text-2xl font-bold text-white mt-12 mb-8">
+        Professional Experience
+      </h2>
+      <Suspense
+        fallback={
+          <div className="h-64 w-full animate-pulse bg-white/5 rounded-2xl" />
+        }
+      >
         <Projectscard projects={SelectCompaniesProjects as Project[]} />
       </Suspense>
     </section>
