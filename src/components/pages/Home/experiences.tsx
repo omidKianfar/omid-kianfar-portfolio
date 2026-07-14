@@ -42,7 +42,7 @@ const ExperienceItem = ({ experience }: { experience: experienceType }) => {
 
       <div className="flex flex-wrap items-center gap-2 mt-1 mb-4">
         <span className="text-sky-400 font-medium">{experience.company}</span>
-        <span className="text-slate-400 text-sm">| {experience.HowWork}</span>
+        <span className="text-slate-100 text-sm">| {experience.HowWork}</span>
       </div>
 
       <div className="space-y-4 mb-6">
