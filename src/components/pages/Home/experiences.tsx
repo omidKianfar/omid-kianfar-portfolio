@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import TitleComponent from "./title";
 import { ExperiencesData } from "./data";
+import { experienceType, experienceWhatDo } from "./type";
 
 const ExperiencesComponent = () => {
   return (
@@ -15,18 +16,18 @@ const ExperiencesComponent = () => {
       />
 
       <div className="mt-12 space-y-16 border-l border-white/10 pl-8">
-        {ExperiencesData.map((exp) => (
-          <ExperienceItem key={exp.id} exp={exp} />
+        {ExperiencesData.map((experience) => (
+          <ExperienceItem key={experience.id} experience={experience as experienceType} />
         ))}
       </div>
     </section>
   );
 };
 
-const ExperienceItem = ({ exp }: { exp: any }) => {
+const ExperienceItem = ({ experience }: { experience: experienceType }) => {
   const [showAll, setShowAll] = useState(false);
-  const visibleItems = showAll ? exp.techStack : exp.techStack.slice(0, 15);
-  const hasMore = exp.techStack.length > 15;
+  const visibleItems = showAll ? experience?.techStack : experience?.techStack?.slice(0, 15);
+  const hasMore = experience?.techStack?.length! > 15;
 
   return (
     <motion.div
@@ -37,15 +38,15 @@ const ExperienceItem = ({ exp }: { exp: any }) => {
     >
       <div className="absolute -left-[40px] top-1.5 h-4 w-4 rounded-full bg-sky-400 shadow-[0_0_10px_rgba(56,189,248,0.5)]"></div>
 
-      <h3 className="text-xl font-bold text-white">{exp.title}</h3>
+      <h3 className="text-xl font-bold text-white">{experience.title}</h3>
 
       <div className="flex flex-wrap items-center gap-2 mt-1 mb-4">
-        <span className="text-sky-400 font-medium">{exp.company}</span>
-        <span className="text-slate-400 text-sm">| {exp.HowWork}</span>
+        <span className="text-sky-400 font-medium">{experience.company}</span>
+        <span className="text-slate-400 text-sm">| {experience.HowWork}</span>
       </div>
 
       <div className="space-y-4 mb-6">
-        {exp.WhatDo.map((item: any) => (
+        {experience?.WhatDo?.map((item: experienceWhatDo) => (
           <div key={item.id} className="text-slate-100 text-sm leading-relaxed">
             <strong className="text-orange-400/90 block mb-1">
               {item.title}
@@ -56,7 +57,7 @@ const ExperienceItem = ({ exp }: { exp: any }) => {
       </div>
 
       <div className="flex flex-wrap gap-2">
-        {visibleItems.map((tech: string) => (
+        {visibleItems?.map((tech: string) => (
           <span
             key={tech}
             className="px-2 py-1 text-[10px] uppercase tracking-wider rounded bg-white/5 border border-white/10 text-blue-200 font-semibold"
