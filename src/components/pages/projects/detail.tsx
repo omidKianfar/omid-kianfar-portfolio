@@ -21,11 +21,11 @@ const ProjectDetailComponent = () => {
   const params = useSearchParams();
   const projectId = params.get("projectId");
   const allProjects = [...PersonalProjects, ...SelectCompaniesProjects];
-  const project = allProjects.find((p) => p.id === projectId);
+  const project = allProjects.find((project) => project.id === projectId);
 
   if (!project) return notFound();
 
-  const images = (project as Project).images || [];
+  const images = project.images || [];
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-12 text-white cursor-default">
@@ -36,7 +36,7 @@ const ProjectDetailComponent = () => {
         ← Back to Projects
       </Link>
 
-      <header className="mt-8 mb-12">
+      <header className="mt-8 mb-8">
         <h1 className="text-3xl md:text-3xl font-bold tracking-tight text-white">
           {project.title}
         </h1>
@@ -45,18 +45,42 @@ const ProjectDetailComponent = () => {
           <span
             className={`px-2 py-1 text-[10px] rounded-full font-bold uppercase ${project.category === "Company" ? "bg-sky-500/20 text-sky-300" : "bg-emerald-500/20 text-emerald-300"}`}
           >
-            {(project as any).category || "Project"}
+            {project.category || "Project"}
           </span>
         </div>
       </header>
 
-      {(project as any).nda && (
+      {(project?.liveUrl || project?.githubUrl) && (
+        <div className="flex justify-center items-center mb-12">
+          {project?.liveUrl && (
+            <Link
+              href={project?.liveUrl as string}
+              target="_blank"
+              className="mr-8 text-blue-400 text-lg font-semibold hover:text-blue-300"
+            >
+              Live Demo
+            </Link>
+          )}
+
+          {project?.githubUrl && !project?.nda && (
+            <Link
+              href={project?.githubUrl as string}
+              target="_blank"
+              className="mr-8 text-blue-400 text-lg font-semibold hover:text-blue-300"
+            >
+              GitHub Repository
+            </Link>
+          )}
+        </div>
+      )}
+
+      {project?.nda && (
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          className="my-6 p-4 rounded-lg bg-amber-500/10 border border-amber-500/20 text-amber-500 text-sm italic"
+          className="my-8 p-4 rounded-lg bg-amber-500/10 border border-amber-500/20 text-amber-500 text-sm italic"
         >
-          {(project as any).nda}
+          {project?.nda}
         </motion.div>
       )}
 
@@ -102,25 +126,25 @@ const ProjectDetailComponent = () => {
         </h3>
 
         <p className="text-sky-400 font-medium">
-          {(project as any).myRole || "Lead Developer"}
+          {project.myRole || "Lead Developer"}
         </p>
       </div>
 
       <div className="mt-16 space-y-6">
         <h2 className="text-2xl font-bold">Engineering Achievements</h2>
 
-        {project.achievements.map((item, i) => (
+        {project.achievements.map((achievement, index) => (
           <motion.div
-            key={i}
+            key={index}
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="p-6 rounded-xl border border-white/5 bg-white/[0.02]"
           >
-            <h4 className="text-sky-400 font-semibold">{item.title}</h4>
+            <h4 className="text-sky-400 font-semibold">{achievement.title}</h4>
 
             <p className="text-slate-400 text-sm mt-2 leading-7">
-              {item.description}
+              {achievement.description}
             </p>
           </motion.div>
         ))}
@@ -130,7 +154,7 @@ const ProjectDetailComponent = () => {
         <h3 className="text-lg font-bold mb-4">Tech Stack</h3>
 
         <div className="flex flex-wrap gap-2">
-          {(project as any).techStack.map((tech: string) => (
+          {project.techStack.map((tech: string) => (
             <span
               key={tech}
               className="px-3 py-1 rounded-md bg-white/5 border border-white/10 text-xs text-sky-300"

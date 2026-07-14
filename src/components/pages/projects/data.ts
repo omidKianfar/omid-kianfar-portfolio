@@ -76,14 +76,9 @@ const PersonalProjects = [
       "Notistack",
       "Git",
     ],
-    liveUrl: {
-      title: "next-mini-jira.netlify.app",
-      link: "https://next-mini-jira.netlify.app",
-    },
-    githubUrl: {
-      title: "github.com/omidKianfar/next-mini-jira.git",
-      link: "https://github.com/omidKianfar/next-mini-jira.git",
-    },
+    liveUrl: "https://next-mini-jira.netlify.app",
+    githubUrl: "https://github.com/omidKianfar/next-mini-jira.git",
+    nda: null,
   },
   {
     id: "google-calendar",
@@ -152,10 +147,8 @@ const PersonalProjects = [
       "Git",
     ],
     liveUrl: null,
-    githubUrl: {
-      title: "github.com/omidKianfar/next-google-calendar-app",
-      link: "https://github.com/omidKianfar/next-google-calendar-app",
-    },
+    githubUrl: "https://github.com/omidKianfar/next-google-calendar-app",
+    nda: null,
   },
 ];
 
@@ -239,6 +232,8 @@ const SelectCompaniesProjects = [
       "Microsoft Azure",
       "Amazon Web Services (AWS)",
     ],
+    liveUrl: null,
+    githubUrl: null,
     nda: "Due to strict NDA agreements, specific business logic and proprietary architectural details are intentionally omitted.",
   },
   {
@@ -315,6 +310,8 @@ const SelectCompaniesProjects = [
       "Microsoft Azure",
       "Amazon Web Services (AWS)",
     ],
+    liveUrl: null,
+    githubUrl: null,
     nda: "Specific project architecture, proprietary conversational logic, and client-side implementation details are protected under NDA.",
   },
 ];

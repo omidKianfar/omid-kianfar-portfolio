@@ -3,9 +3,9 @@ type Project = {
   title: string;
   description: string;
   achievements: { title: string; description: string }[];
-  nda?: string;
-  liveUrl?: { link: string } | null;
-  githubUrl?: { link: string } | null;
+  nda?: string | null;
+  liveUrl?: string | null;
+  githubUrl?: string | null;
   category: "Personal" | "Company";
   myRole?: string;
   images?: string[] | null;
