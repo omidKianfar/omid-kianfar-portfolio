@@ -164,7 +164,7 @@ const SelectCompaniesProjects = [
       {
         title: "Scalability",
         description:
-          "Sole front-end developer for a multi-tenant B2B platform (Next.js, GraphQL); owned all architecture and technical decisions end-to-end beyond the initial boilerplate. Built a modular UI system (Atomic Design).",
+          "Sole front-end developer for a multi-tenant B2B platform (Next.js, GraphQL), working alongside a backend team of 4 engineers, 3 QA testers and other teamats; owned all front-end architecture and technical decisions end-to-end beyond the initial boilerplate. Built a modular UI system (Atomic Design).",
       },
       {
         title: "Unified Inbox",
@@ -246,7 +246,7 @@ const SelectCompaniesProjects = [
       {
         title: "Dynamic Engine",
         description:
-          "Owned front-end architecture for a rule-based branching engine, enabling unlimited user paths based on dynamic assessment metrics.",
+          "Owned front-end architecture for a rule-based branching engine, working alongside 2 QA testers and other teamats, enabling unlimited user paths based on dynamic assessment metrics.",
       },
       {
         title: "Visual Editor",
