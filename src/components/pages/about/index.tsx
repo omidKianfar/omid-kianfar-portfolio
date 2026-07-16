@@ -25,10 +25,11 @@ const AboutComponent = () => {
         <p>
           With 6 years of deep-dive experience in front-end architecture, I
           specialize in building scalable, maintainable, and
-          performance-optimized web applications. Having spent 4 years working
-          remotely with international markets, I have developed a sharp focus on
-          cross-cultural collaboration, agile methodologies, and the ability to
-          deliver enterprise-grade solutions that stand the test of time.
+          performance-optimized web applications. Having spent nearly 4 years
+          working remotely with international markets, I have developed a sharp
+          focus on cross-cultural collaboration, agile methodologies, and the
+          ability to deliver enterprise-grade solutions that stand the test of
+          time.
         </p>
 
         <p>
@@ -36,8 +37,8 @@ const AboutComponent = () => {
           about functionality, but about long-term sustainability. I am deeply
           passionate about architecting robust component systems, ensuring
           seamless integration between front-end logic and backend services, and
-          mentoring teammates to elevate the collective technical standard of
-          the project.
+          proactively identifying gaps that others missed to keep the whole
+          product on track.
         </p>
 
         <p>
