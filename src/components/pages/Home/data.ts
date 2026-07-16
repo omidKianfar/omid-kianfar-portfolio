@@ -22,15 +22,15 @@ const ExperiencesData = [
     WhatDo: [
       {
         id: 1,
-        title: "Front-End Ownership",
+        title: "Technical Maintenance & Troubleshooting",
         desdription:
-          "Owned complete front-end architecture and delivery end-to-end for select flagship products, beyond the initial boilerplate.",
+          "Worked directly with backend engineers, designers, testers, and PMs on complex applications for U.S., Canadian, and European markets, flagging architecture issues and proposing front-end fixes.",
       },
       {
         id: 2,
-        title: "Team Collaboration",
+        title: "Front-End Ownership",
         desdription:
-          "Worked alongside other front-end developers—sometimes from project kickoff, each owning a distinct module, and sometimes joining an existing team to take on a project's full scope, a major module, or a specific feature.",
+          "Owned complete front-end architecture and delivery end-to-end for select flagship products, on top of an initial company boilerplate.",
       },
       {
         id: 3,
@@ -40,27 +40,45 @@ const ExperiencesData = [
       },
       {
         id: 4,
-        title: "Technical Maintenance & Troubleshooting",
+        title: "Team Collaboration",
         desdription:
-          "Worked directly with backend engineers, designers, Testers, and PMs on complex applications for U.S., Canadian, and European markets, flagging architecture issues and proposing front-end fixes.",
+          "Worked alongside other front-end developers across 4 different internal teams, each with its own backend engineers, testers, and PMs — sometimes from project kickoff, each owning a distinct module, and sometimes joining an existing team to take on a project's full scope, a major module, or a specific feature.",
       },
       {
         id: 5,
+        title: "Concurrent Project Delivery",
+        desdription:
+          "Worked across multiple concurrent projects at a time, taking on full ownership of one while contributing to others as a problem-solver on specific modules or features, depending on project needs.",
+      },
+      {
+        id: 6,
         title: "Component Ecosystem & Scalability",
         desdription:
           "Built reusable component libraries (MUI, Styled Components) and improved performance.",
       },
       {
-        id: 6,
+        id: 7,
+        title: "Product-Minded Recommendations",
+        desdription:
+          "Across multiple projects, identified functional gaps beyond surface-level UI/UX feedback and proposed practical fixes with direct business value, typically resolved through focused syncs with management, designers, and backend engineers.",
+      },
+      {
+        id: 8,
         title: "API & State Integration",
         desdription:
           "Delivered UI and integration work on core product screens (GraphQL, React Query).",
       },
       {
-        id: 7,
+        id: 9,
+        title: "Self-Directed Delivery",
+        desdription:
+          "Worked with minimal day-to-day direction — proactively surfaced blockers, requested syncs when needed, and followed established update/reporting practices to keep delivery on track.",
+      },
+      {
+        id: 10,
         title: "Confidentiality Notice",
         desdription:
-          "Due to strict NDA agreements, specific business logic and proprietary implementation details are intentionally omitted.",
+          ": Due to strict NDA agreements, specific business logic and proprietary implementation details are intentionally omitted.",
       },
     ],
     techStack: [
@@ -118,7 +136,7 @@ const ExperiencesData = [
         id: 1,
         title: "Platform expansion",
         desdription:
-          "Extended a mobile-first, Instagram-style social app into a fully responsive desktop experience.",
+          "Extended a mobile-first, Instagram-style social app — built for a U.S.-based client and market — into a fully responsive desktop experience.",
       },
       {
         id: 2,

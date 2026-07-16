@@ -15,7 +15,7 @@ const HeroComponent = () => {
   };
 
   return (
-    <section className="relative mx-auto flex max-w-6xl flex-col items-center py-16 text-center lg:flex-row lg:text-left lg:py-16 px-4 sm:px-6 lg:px-8">
+    <section className="relative mx-auto flex max-w-6xl flex-col items-center py-10 text-center lg:flex-row lg:text-left  px-4 sm:px-6 lg:px-8">
       <motion.div
         variants={containerVariants}
         initial="hidden"
@@ -45,12 +45,13 @@ const HeroComponent = () => {
           Senior Front-End Developer with 6 years of experience, specializing in
           building high-performance applications with Next.js and TypeScript.
           Proven track record of working remotely on complex, large-scale
-          projects for international markets, including the USA, Canada and Europe.
-          Expertise in owning end-to-end front-end architecture, with a strong
-          focus on scalability, maintainability, and seamless third-party
+          projects for international markets, including the USA, Canada and
+          Europe. Expertise in owning end-to-end front-end architecture, with a
+          strong focus on scalability, maintainability, and seamless third-party
           integrations. A highly reliable problem solver, recognized for
-          resolving critical technical challenges in high-volume production
-          environments and leading teams toward business-aligned success.
+          resolving critical technical challenges in complex, production
+          environments with substantial user bases, and driving product
+          decisions that balanced technical quality with business outcomes.
         </motion.p>
 
         <motion.div
