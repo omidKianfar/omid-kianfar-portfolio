@@ -234,7 +234,7 @@ const SelectCompaniesProjects = [
     ],
     liveUrl: null,
     githubUrl: null,
-    nda: "Due to strict NDA agreements, specific business logic and proprietary architectural details are intentionally omitted.",
+    nda: null,
   },
   {
     id: "octobit",
@@ -312,7 +312,7 @@ const SelectCompaniesProjects = [
     ],
     liveUrl: null,
     githubUrl: null,
-    nda: "Specific project architecture, proprietary conversational logic, and client-side implementation details are protected under NDA.",
+    nda: null,
   },
 ];
 

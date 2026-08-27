@@ -111,13 +111,13 @@ const ExperiencesData = [
           "Built reusable component libraries using MUI and Styled Components and improved application performance.",
       },
       {
-        id: 6,
+        id: 7,
         title: "Product-Minded Recommendations",
         desdription:
           "Identified functional gaps beyond surface-level UI/UX issues and proposed practical improvements with direct business value, typically working through focused discussions with management, designers, and backend engineers.",
       },
       {
-        id: 7,
+        id: 8,
         title: "API & State Integration",
         desdription:
           "Delivered UI and integration work on core product screens using GraphQL and React Query.",
