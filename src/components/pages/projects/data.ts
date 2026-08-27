@@ -14,27 +14,27 @@ const PersonalProjects = [
       {
         title: "State Management",
         description:
-          "Managed complex global state (tasks, chats, users, filters) with Redux Toolkit, synced in real-time with Firebase Firestore listeners.",
+          "Managed complex global state, including tasks, chats, users, and filters, with Redux Toolkit, synchronized in real time using Firebase Firestore listeners.Managed complex global state, including tasks, chats, users, and filters, with Redux Toolkit, synchronized in real time using Firebase Firestore listeners.",
       },
       {
         title: "Media Pipeline",
         description:
-          "Built a custom in-browser video compression (FFmpeg WASM) and image cropping/optimization pipeline (react-easy-crop), offloading heavy processing from the backend.",
+          "Built a custom in-browser video compression pipeline using FFmpeg WASM and an image cropping and optimization pipeline using react-easy-crop, offloading heavy processing from the backend.",
       },
       {
         title: "Support & Communication Hub",
         description:
-          "Built a real-time support chat (Firestore) with a custom Slate.js editor, voice recording (RecordRTC), and audio waveform visualization (wavesurfer.js).",
+          "Built a real-time support chat using Firestore, with a custom Slate.js editor, voice recording using RecordRTC, and audio waveform visualization using WaveSurfer.js.",
       },
       {
         title: "SaaS Billing",
         description:
-          "Implemented end-to-end Stripe subscription logic (monthly/yearly plans, trial mode) with API-driven success/failure flows.",
+          "Implemented end-to-end Stripe subscription logic, including monthly/yearly plans, trial mode, and API-driven success/failure flows.",
       },
       {
         title: "Access Control & Quality",
         description:
-          "Built Role-Based Access Control via custom Auth/Role guards, and covered core components (forms, modals) with Jest and React Testing Library.",
+          "Built Role-Based Access Control using custom authentication and role guards, and covered core components such as forms and modals with Jest and React Testing Library.",
       },
     ],
     myRole:
@@ -90,12 +90,12 @@ const PersonalProjects = [
       {
         title: "Authentication",
         description:
-          "Engineered a secure Google OAuth 2.0 (Implicit Flow) integration with in-memory token storage to avoid cross-tab sync issues and client-side storage risks.",
+          "Engineered a secure Google OAuth 2.0 (Implicit Flow) integration with in-memory token storage to avoid cross-tab synchronization issues and client-side storage risks.",
       },
       {
         title: "Business Logic",
         description:
-          "Centralized all calendar CRUD operations and state (loading/error) into a single custom hook (useGoogleCalendar), isolating logic from the UI.",
+          "Centralized all calendar CRUD operations and state management, including loading and error states, into a single custom hook (useGoogleCalendar), isolating business logic from the UI.",
       },
       {
         title: "Scheduling Engine",
@@ -105,17 +105,17 @@ const PersonalProjects = [
       {
         title: "Forms & Validation",
         description:
-          ": Implemented React Hook Form with Yup, including cross-field validation (end time must follow start time).",
+          "Implemented React Hook Form with Yup, including cross-field validation to ensure that the end time follows the start time.",
       },
       {
         title: "Quality Assurance",
         description:
-          "Covered core logic and components (schema, modals, inputs) with Jest and React Testing Library unit tests.",
+          "Covered core logic and components, including schemas, modals, and inputs, with Jest and React Testing Library unit tests.",
       },
       {
         title: "Performance",
         description:
-          "Optimized load times via React Suspense and lazy-loading for modals and heavy components.",
+          "Optimized load times using React Suspense and lazy loading for modals and heavy components.",
       },
     ],
     myRole:
